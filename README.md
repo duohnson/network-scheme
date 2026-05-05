@@ -4,7 +4,7 @@ Simulación de red empresarial con ISP, servidores DNS/WEB y enrutamiento NAT us
 
 ## Mis Topologías de Red:
 
-![Simulación de red actual](/Imagenes/Captura%201.png)
+![Simulación de red actual](/Imagenes/Captura%202.png)
 ![Simulación de red básica](/Imagenes/test_lab.png)
 
 ## Descripción
@@ -149,7 +149,7 @@ O configurar manualmente si lo prefieres:
          PC1
 ```
 
-## Captura de Pantalla
+## Como nos quedaría con la configuracion basica:
 
 ![Simulación de red](/Imagenes/Captura%202.png)
 
