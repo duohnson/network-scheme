@@ -2,9 +2,10 @@
 
 Simulación de red empresarial con ISP, servidores DNS/WEB y enrutamiento NAT usando Cisco Packet Tracer.
 
-## Visual de mi esquema en Cisco Packet Tracer:
+## Mis Topologías de Red:
 
-![Simulación de red](/Imagenes/Captura%201.png)
+![Simulación de red actual](/Imagenes/Captura%201.png)
+![Simulación de red básica](/Imagenes/test_lab.png)
 
 ## Descripción
 
