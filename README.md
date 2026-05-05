@@ -40,7 +40,7 @@ etc.
 - **Serial DCE**: Router-Router (con especificación de velocidad de reloj) (Opcional, yo no lo use.)
 
 Para ver los tipos de cable, visitar [Tipos de Cable](Imagenes/Tipos%20de%20cable.png).
-Y su documento de referencia en `Documentos/Tipos%20de%20cable.pdf`.
+Y su documento de referencia en el siguiente link: [Tipos de Cable](Documentos/Tipos_de_cable.pdf).
 
 ### 2. Configurar Router ISP
 
