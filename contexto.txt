@@ -1,0 +1,53 @@
+No necesariamente debes seguir el mismo orden en el que yo acomodo los dispositivos.
+
+Creamos el router 1941 para simular el ISP
+Luego le creamos un switch, y creamos la conexión a los servidores DNS Y WEB
+Luego nuestra empresa router
+Con switch y 1 pc de momento
+        [ISP ROUTER]
+             |
+         [SW-ISP]
+        /        \
+     DNS        WEB
+
+        [EMPRESA ROUTER]
+              |
+        [SW-EMPRESA]
+              |
+             PC1
+Para las conexiones, usaremos copper straight throught para:
+PC – SWITCH 
+SERVER – SWITCH
+SWITCH – ROUTER
+Y luego usaremos cable especial serial DCE para:
+ROUTER – ROUTER
+Agregar puertos seriales a los routers
+Tipos de cable: 
+. Automatically Choose Connection Type	Se utiliza para cablear automáticamente dispositivos de red. Puedes usar esta opción si no sabes qué cable usar para conectar un Router Cisco.
+2. Console	La conexión de consola es el tipo de conexión entre la interfaz Serial/USB de una computadora o portátil y la interfaz de consola del Router o Switch. La conexión de consola se utiliza para la configuración inicial.
+3. Copper Straight-Through	Conecta dispositivos de red que operan en diferentes capas en los modelos de red OSI o TCP. Por ejemplo; PC-Switch, Router-Switch.
+4. Copper Cross-Over	Conecta dispositivos de red que operan en las mismas capas en los modelos de red OSI o TCP. Por ejemplo; PC-PC, Switch-Switch, Router-Router, PC-Router.
+5. Fiber	Los cables de fibra óptica, que ofrecen alta velocidad en la transmisión de datos, transmiten datos como luz. Se pueden utilizar en conexiones que requieren una alta velocidad de transmisión de datos.
+6. Phone	Se utiliza para la conexión de dispositivos como módems o teléfonos.
+7. Coaxial	Es el tipo de cable utilizado en topologías de red antiguas. Hoy en día se utiliza en transmisiones de televisión por cable.
+8. Serial DCE	Se utiliza un cable serial DCE cuando se configuran Routers Cisco con la interfaz Serial. En este tipo de cable, se debe especificar la velocidad de reloj.
+9. Serial DTE	Se utiliza un cable serial DTE para conectar dispositivos como Routers. No se requiere una velocidad de datos específica para este tipo de cable. T1/E1 utiliza velocidades estándar para las conexiones.
+10. Octal	El cable Octal es un conector de 68 pines en un extremo y 8 terminales RJ-45 en el otro extremo. Se puede utilizar para crear un servidor de terminales o de acceso.
+11. IoE Custom Cable	Este tipo de cable, que se introdujo en la versión 7 de CPT, fue desarrollado para soluciones de hogares inteligentes.
+12. USB	Es un cable USB que conecta dispositivos con una interfaz USB.
+Configurar routes para la salida al exterior y conexión con el servidor DNS y WEB
+conf t
+interface g0/1
+ ip address 10.64.20.1 255.255.255.0
+ ip nat inside
+ no shutdown
+
+interface g0/0
+ ip address 56.23.17.x 255.255.255.0
+ ip nat outside
+ no shutdown
+access-list 1 permit 10.64.20.0 0.0.0.255
+ip nat inside source list 1 interface g0/0 overload
+ip route 0.0.0.0 0.0.0.0 56.23.17.1
+donde x se cambia por la ip asignada a dicho router nuevo, ojo, también cambiar las ip privadas 10.64 para no compartir la misma
+
