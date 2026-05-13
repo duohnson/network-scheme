@@ -5,7 +5,7 @@
 En la carpeta de Resumenes link: [Resumenes](Documentos/Resumenes).
 Puedes encontrar mis notas de estudio de los cursos de CCNA, estas notas son de gran utilidad para entender los conceptos y configuraciones de redes.
 
-==========================================================================================================================================================
+========================================================================================================================================================
 
 # Network Scheme - Topología ISP con Servidores
 
