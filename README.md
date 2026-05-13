@@ -2,7 +2,7 @@
 
 ## Para ver notas de estudio del curso CCNA, dirígete a la carpeta "Documentos" y "Resumenes".
 
-En la carpeta de Resumenes link: [Resumenes](Documentos/Resumenes).
+En la carpeta de Resumenes link: [Resumenes](/Resumenes/README.md).
 Puedes encontrar mis notas de estudio de los cursos de CCNA, estas notas son de gran utilidad para entender los conceptos y configuraciones de redes.
 
 ========================================================================================================================================================
