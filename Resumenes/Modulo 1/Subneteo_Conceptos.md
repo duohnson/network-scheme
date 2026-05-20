@@ -1,0 +1,142 @@
+
+## PROTOCOLOS: CONJUNTO DE REGLAS
+
+### SEGMENTACION: DIVIDIR PAQUETES EN PARTES MAS PEQUEÑAS.
+
+### CONTROL DE FLUJO: CANTIDAD Y VELOCIDAD DEL MENSAJE.
+
+### MANERAS DE ENTREGAR UN MENSAJE:
+UNICAST  : PAQUETE DE 1 A 1
+MULTICAST: PAQUETE DE 1 A VARIOS
+BROADCAST: PAQUETE DE 1 A TODOS. 
+
+-----------------------------------------------------------
+
+### SUITE DE PROTOCOLOS: 
+		HTTP 
+		TCP
+		IP
+		ETHERNET
+
+-----------------------------------------------------
+
+### PROTOCOLOS: 
+
+### CAPA DE APLICACION:
+HTTP : HYPER TEXT TRANSFER PROTOCOL
+HTTPS : HYPER TEXT TRANSFER PROTOCOL SECURE
+DNS   : DOMAIN NAME SERVER
+FTP   : FILE TRANSFER PROTOCOL
+TFTP  : TRIVIAL FILE TRANSFER PROTOCOL
+POP   : POST OFFICE PROTOCOL
+IMAP  : INTERNET MESSAGE ACCESS PROTOCOL
+SMTP  : SIMPLE MAIL TRANSFER PROTOCOL
+DHCP  : DYNAMIC HOST CONFIGURATION PROTOCOL
+
+### CAPA DE TRANSPORTE:
+TCP: TRANSMISSION CONTROL PROTOCOL
+UDP: USER DATAGRAM PROTOCOL
+
+### CAPA DE RED: 
+IP : INTERNET PROTOCOL
+ICMP: INTERNET CONTROL MESSAGE PROTOCOL
+NAT : NETWORK ADDRESS TRANSLATION
+
+### RIP  : ROUTING INFORMATION PROTOCOL
+### EIGRP: ENHANCED INTERIOR GATEWAY ROUTING PROTOCOL
+### OSPF : OPEN SHORTEST PATH FIRST
+
+### CAPA DE ACCESO A LA RED:
+ETHERNET
+### ARP: ADDRESS RESOLUTION PROTOCOL
+### PPP: POINT TO POINT PROTOCOL
+### HDLC: HIGH LEVEL DATA LINK CONTROL
+
+-----------------------------------------------------------------------------------------------
+
+### MODELO OSI: OPEN SYSTEM INTERCONECTION
+
+			PDU: PROTOCOL DATA UNIT					EJEMPLO
+		
+APLICACION		DATOS		HTTP, DNS, FTP, POP,IMAP				HTTP
+PRESENTACION		DATOS									HTTP
+SESION			DATOS									HTTP
+TRANSPORTE		SEGMENTO	TCP/UDP					# PUERTO + 	HTTP
+RED 			PAQUETE		IP 				   IP + # PUERTO + 	HTTP
+ENLACE DE DATOS		TRAMA		MAC			     MAC + IP + # PUERTO + 	HTTP
+FISICA			BITS					     1010101010101010101010101010101
+
+------------------------------------------------------------------------------------------------------
+
+ENCAPSULACION: AGREGAR ENCABEZADOS EN CADA CAPA.
+DESENCAPSULACION: QUITAR ENCABEZADOS EN CADA CAPA.
+
+------------------------------------------------------------------------------------------------------
+
+### COMPARACION ENTRE OSI / TCP/IP
+
+		MODELO OSI		MODELO TCP/IP
+		(REFERENCIA)		(PROTOCOLOS)
+
+		APLICACION		APLICACION
+		PRESENTACION		APLICACION
+		SESION			APLICACION
+		TRANSPORTE		TRANSPORTE
+		RED			INTERNET
+		ENLACE DE DATOS		ACCESO A LA RED
+		FISICA			ACCESO A LA RED
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	
+### DIRECCIONAMIENTO:
+
+	LOGICO: IP : 192.168.0.10    (PAQUETE)
+	
+	FISICO: MAC : D4-3B-04-6A-B4-13  (TRAMA)
+
+MAC: MEDIA ACCESS CONTROL
+
+-------------------------------------------------------------------------------------------------------
+
+### DISPOSITIVOS INTERMEDIARIOS:
+
+ROUTER: ENRUTADOR : ENRUTA   : CAPA 3 : CAPA DE RED : DIRECCIONAMIENTO LOGICO : IP : 192.168.0.10 
+SWITCH: CONMUTADOR: CONMUTAR : CAPA 2 : CAPA DE ENLACE DE DATOS: DIRECCION MAC: MAC: D4-3B-04-6A-B4-13
+
+--------------------------------------------------------------------------------------------------------
+
+La dirección de gateway es la dirección de una interfaz de router que está conectada a la misma red que el host. 
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+### SUBNETEO :DIVIDIR UNA RED GRANDE EN PARTES MAS PEQUEÑAS:
+
+10.0.0.0/16
+		1 PASO:		2 PASO:		3 PASO			4 PASO			5 PASO
+		ACOMODAR	SACAR PREFIX	MASCARA			RED			1° UTILIZABLE
+		MAYOR A MENOR	32-N=/??	WILDCARD		BROADCAST		ULTIMA UTILIZABLE
+
+100 HOST	300+2		32-9 =/23	255.255.254.0		R : 10.0.0.0		1°: 10.0.0.1
+						0.0.1.255		BR: 10.0.1.255		UL: 10.0.1.254
+										     +1
+32 HOST		100+2		32-7 =/25	255.255.255.128		R: 10.0.2.0		1°: 10.0.2.1
+						0.0.0.127		BR:10.0.2.127		UL: 10.0.2.126
+										     +1
+300 HOST	32+2		32-6 =/26	255.255.255.192		R: 10.0.2.128		1°: 10.0.2.129
+						0.0.0.63		BR:10.0.2.191		UL: 10.0.2.190
+
+TABLA DE BASE 2:
+0 1 2 3 4  5  6  7   8   9   10    = N
+2 2 2 2 2  2  2  2   2   2   2
+1 2 4 8 16 32 64 128 256 512 1024  = HOST
+
+REGLAS:
+SACAR PREFIJO : 32-N =/ ??  DONDE "N" ES LA POTENCIA
+BROADCAST: RED + WILDCARD
+1° UTILIZABLE: RED + 1
+ULT UTILIZABLE: BROADCAST - 1
+SIGUIENTE RED: BROADCAST + 1
+
+
+========================================================================================================================================================
+
