@@ -1,0 +1,34 @@
+Limitaciones de los medios inalámbricos:
+
+Área de cobertura
+Interferencia
+Seguridad
+Medio compartido
+
+WiFi - IEEE 802.11
+Bluetooth - IEEE 802.15
+WiMAX - IEEE 802.16
+
+-------------
+
+Cable de estación de trabajo al puerto de consola de un router Cisco:
+
+* Cable de consola Rollover
+
+-------------
+
+Dos hilos de fibra en una sola conexión de fibra óptica:
+
+* Permitir conectividad Duplex.
+
+-------------
+
+Codificación de tramas:
+
+* Convierte los bits a un código predefinido para proporcionar un patrón predecible que ayude a distinguir los bits de datos de los bits de control.
+
+-------------
+
+Capa de enlace de datos o capa de red OSI:
+
+* Permite que las capas superiores accedan a los medios. El protocolo de capa superior no conoce completamente el tipo de medio que se utiliza para reenviar los datos.

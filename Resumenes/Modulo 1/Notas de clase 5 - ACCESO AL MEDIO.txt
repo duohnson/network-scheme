@@ -1,0 +1,27 @@
+CONTROL DE ACCESO AL MEDIO
+|
+|- RESPONSABLE DE LA UBICACION Y LA REMOCION DE TRAMAS EN LOS MEDIOS.
+|
+|- SE COMUNICA DIRECTAMENTE CON LA CAPA FISICA.
+|
+|- SI HAY VARIOS DISPOSITIVOS EN UN UNICO MEDIO QUE INTENTEN REENVIAR DATOS SIMULTANEAMENTE, LOS DATOS COLISIONAN, LO QUE PROVOCA QUE ESTOS DAÑEN Y NO SE PUEDAN UTILIZAR.
+|
+|- ETHERNET PROPORCIONA UN METODO PARA CONTROLAR LA FORMA EN QUE LOS NODOS COMPARTEN ACCESO MEDIANTE EL USO DE UNA TECNOLOGIA DE ACCESO MULTIPLE POR DETECCION DE PORTADORA (CSMA).
+
+PROCESO DE ACCESO MULTIPLE POR DETECCION DE PORTADORA (CSMA)
+
+* En primera instancia, se utiliza para detectar si los medios transportan una señal.
+* Si no se detecta una señal portadora, el dispositivo transmite sus datos.
+* Si dos dispositivos transmiten al mismo tiempo, se produce colision de datos.
+
+CSMA/Detección de colisión:
+
+El Switch reemplaza por métodos mas actuales y modernos, haciendo que el CSMA sea innecesario, ya que divide medios de colisión por lo cual es la solución mas optima y actual para la colisión de datos, ya que al poseer una lista de MAC sabe a donde enviar cada paquete.
+
+CSMA/Prevención de colisión - WIRELESS:
+
+* Examina los medios para detectar la presencia de una señal de datos. Si los medios están libres, el dispositivo envia una notificación a través de los medios sobre su intención de utilizarlos.
+
+* El dispositivo luego envía los datos.
+
+* Utilizado por las tecnologías de red inalámbricas 802.11

@@ -1,0 +1,30 @@
+# Conjunto de protocolos de red
+
+En muchos casos, los protocolos deben poder trabajar con otros protocolos para que su experiencia en linea le proporcione todo lo que necesita para las comunicaciones de red. Los conjuntos de protocolos están diseñados para funcionar entre si sin problemas.
+
+Se denomina suite de protocolos.
+
+## CAPA DE APLICACION:
+
+Asume responsabilidades de Interfaz de servicios de red, representación y formato de datos, control del dialogo, entre sus protocolos están: 
+
+DNS, DHCP, SLAAC, SMTP, POP3, IMAP, FTP, SFTP, TFTP, HTTP, HTTPS, REST
+
+## CAPA DE TRANSPORTE:
+
+Asume la responsabilidad de entregar de forma correcta la información, sus protocolos son:
+
+TCP, UDP
+
+## CAPA DE INTERNET:
+
+Lo que permite el redireccionamiento y que los dispositivos se identifiquen, sus protocolos son:
+
+IPv4, IPv6, NAT, ICMPv4, ICMPv6, OSPF, EIGRP, BGP
+
+# CAPA DE ACCESO DE RED
+
+Permite la resolución de direcciones y el encuentro a nivel de hardware, sus protocolos son:
+
+ARP, ETHERNET, WLAN
+

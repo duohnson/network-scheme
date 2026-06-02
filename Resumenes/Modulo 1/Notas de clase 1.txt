@@ -1,0 +1,87 @@
+# Protocolos - Capa OSI Y TCP/IP
+
+--
+
+## Todos los métodos de comunicación tienen tres elementos en común:
+
+Los origines de los mensajes - Los orígenes de los mensajes son las personas o los dispositivos electrónicos que deben enviar un mensaje a otras personas o dispositivos.
+Destino del mensaje - El destino recibe el mensaje y lo interpreta.
+Canal - formado por los medios que propocionan el camino por el que el mensaje viaja desde el origen hasta el destino.
+
+--
+
+## Parte de los requisitos de un protocolo de red están:
+
+Codificación de los mensajes
+Formato y el encapsulamiento del mensaje
+Tamaño del mensaje
+Sincronización del mensaje
+Opciones de entrega del mensaje
+
+--
+
+## Codificación de los mensajes: 
+
+Proceso mediante el cual la información se convierte en otra forma aceptable para la transmisión. La decodificación revierte este proceso para interpretar la idea.
+
+## Formato y el encapsulamiento del mensaje: 
+
+Cuando se envia un mensaje al destino, se debe utilizar un formato o estructura especifico, los formatos de los mensajes dependen del tipo de mensaje y el canal que se utilice para entregar el mensaje.
+
+## Tamaño del mensaje: 
+
+Separación del mensaje en partes o pequeños fragmentos.
+
+## Sincronización del mensaje: 
+
+El tiempo de los mensajes es muy importante, por eso en el tiempo influye:
+
+* Control de flujo - Proceso de gestión de velocidad de la trasmisión de datos.
+
+* Tiempo de espera de respuesta - Especifica cuanto tiempo demora la respuesta y sabe que hacer cuando no obtiene una respuesta.
+
+* El método de acceso - Determina en que momento alguien puede enviar un mensaje.
+
+----
+
+## Unicast: a un destino.
+## Multicast: a varios destinos pero no a todos.
+## Difusión: a todos.
+
+----
+
+# Los protocolos de red: 
+
+Protocolo de comunicaciones de red: Permiten que dos o mas dispositivos se comuniquen a través de uno o mas compatibles. La familia de tecnologías Ethernet implica una variedad de protocolos como IP, Control de transmisión TCP, HTTP y mucho más.
+Protocolo de seguridad de red: Los protocolos protegen los datos para proporcionar autentificación, integridad de datos y cifrado de datos, ejemplo SSH SSL Y TLS.
+Protocolo de routing: Permiten a los routeres intercambiar información de ruta, comparar ruta y a continuación seleccionar la mejor ruta al destino e inalámbrica.
+Ejemplo OSPF y BGP
+Protocolo de detección de servicios: Los protocolos se utilizan para la detección automática de dispositivos o servicios, DHCP y DNS.
+
+# La función del protocolo de red y sus descripciones: 
+
+## Direcionamiento:
+
+Identifica el remitente y al destinatario previsto del mensaje utilizando un esquema de redireccionamiento, Ethernet, IPv4 e IPv6.
+
+## Confiabilidad:
+
+Proporciona mecanismos de entrega garantizados en caso de mensajes que se pierdan o se corrompen en transito. TCP proporciona entrega garantizada.
+
+## Control de flujo:
+
+Asegura que los datos fluyan a una velocidad eficiente entre dos dispositivos de comunicación. TCP proporciona servicios de control de flujo.
+
+## Secuenciación:
+
+Etiqueta de forma única cada segmento de datos transmitido. Esto es muy útil si se pierde o se retrasan datos.
+Etiqueta de forma exclusiva los segmentos de datos transmitidos para que el receptor lo vuelva a montar correctamente.
+TCP proporciona servicios de secuenciación.
+
+## Detección de errores:
+
+Esta función se utiliza para determinar si los datos se dañaron durante de la voz. Varios protocolos proporcionan detección de errores como Ethernet, IPv4, IPv6 y TCP.
+
+## Interfaz de la aplicación: 
+
+Contiene información utilizada para proceso a proceso entre aplicaciones de red, ejemplo HTTP y HTTPS.

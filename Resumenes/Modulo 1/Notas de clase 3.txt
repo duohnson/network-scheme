@@ -1,0 +1,64 @@
+MODELO OSI: OPEN SYSTEM INTERCONNECTION
+			
+			PDU: PROTOCOL DATA UNIT
+APLICACION 		DATOS				DNS, HTTP, DHCP, IMAP, POP, SMTP
+PRESENTACION 		DATOS
+SESION 			DATOS
+TRANSPORTE 		SEGMENTO			# PUERTO + DATOS
+RED 			PAQUETE				IP + SEGMENTO			
+ENLACE DE DATOS		TRAMA				MAC + PAQUETE
+FISICA			BITS				10101010101010101
+
+¿Para que sirve el puerto?
+
+El puerto identifica el tipo de dato, cuando ese segmento llegue al firewall sepa a donde enviarlo.
+Identificador numero para identificar el dato del segmento.
+
+-----------
+
+ENCAPSULAR: AGREGAR ENCABEZADOS Y EMPAQUETAR LA TRAMA
+DESENCAPSULAR : QUITAR ENCABEZADOS 
+
+SEGMENTAR: DIVIDIR DATOS
+MULTIPLEXACION: INTERCALAR DATOS
+CONVERGENCIA: VOZ VIDEO Y TODOS LOS DATOS EN EL MISMO MEDIO.
+
+-----------
+
+MONOMODO: LAZER - mayor distancia.
+MULTIMODO: LED - mayor velocidad.
+
+-----------
+
+MAC : MEDIA ACCESS CONTROL:
+	1. ENCAPSULAR LA TRAMA
+	ENCABEZADO						TRAILER
+INICIO 	DIR MAC, 	TIPO/CONTROL_DE_FLUJO 	PAQUETE		FCS 	FINAL
+								CRC
+FCS: DETECCION DE ERRORES
+Frame Check Sequence (Secuencia de Verificación de Trama)
+
+	2. CONTROLAR EL ACCESO AL MEDIO
+	CONTROLADO: TURNOS NO COLISIONES
+	CONTIENDA: ESCUCHAR EL MEDIO SI HAY COLISION
+	CSMA/CD		- 802.3
+	CSMA/CA		- 802.11
+
+FULL DUPLEX: CAPACIDAD DE RECIBIT Y ENVIAR DATOS A LA VEZ
+
+HALF DUPLEX: SOLO ENVIA O SOLO RECIBE DATOS
+
+-----------
+
+Encapsulación de datos:
+
+* Armado de la trama antes de la transmisión y desarmado de la trama en el momento en que se la recibe.
+
+* La capa MAC agrega un encabezado y un tráiler a la PDU de la capa de red.
+
+Proporciona tres funciones principales:
+
+* Delimitación de tramas: identifica un grupo de bits que componen una trama; sincronización entre los nodos emisor y receptor.
+* Direccionamiento: cada encabezado Ethernet que se agrega a la trama contiene la dirección física (dirección MAC) que permite que la trama se entregue a un nodo de destino.
+
+* Detección de errores: comprobación de redundancia cíclica (CRC) del contenido de la trama.
