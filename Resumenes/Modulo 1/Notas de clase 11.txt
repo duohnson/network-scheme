@@ -1,0 +1,43 @@
+CONFIGURACION DE INTERFACE:
+
+INTER FAST0/0
+IP ADD 10.0.0.1 255.0.0.0
+NO SHUTDOWN
+EXIT
+
+------------------------------------------------------
+CONFIGURACION DE TELNET:
+
+USERNAME CCNA PASS CISCO
+LINE VTY 0 4
+LOGIN LOCAL
+EXIT
+
+ENABLE SECRET CISCO
+
+-----------------------------------------------------
+CONFIGURACION DE SSH: SECURE SHELL
+
+HOSTNAME R1
+IP DOMAIN-NAME CCNA.COM
+
+CRYPTO KEY GENERATE RSA
+1024
+
+USERNAME CCNA PASS CISCO
+LINE VTY 0 4
+LOGIN LOCAL
+TRANSPORT INPUT SSH
+EXIT
+
+-------------------------------------
+PARA CONECTARSE DESDE LA PC:
+
+SSH -L (USUARIO) (IP DESTINO)
+
+EJEMPLO:
+
+SSH -L CCNA 10.0.0.1
+
+
+-----------------------------------------------------

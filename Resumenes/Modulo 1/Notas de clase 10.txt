@@ -1,0 +1,114 @@
+CAP 15 : CAPA DE APLICACION:
+
+PROTOCOLOS DE CAPA DE APLICACION:
+
+HTTP: HYPER TEXT TRANSFER PROTOCOL
+
+URL: LOCALIZADOR UNIFORME DE RECURSOS
+PARTES DE UNA URL:
+http (el protocolo o esquema)
+www.cisco.com (el nombre del servidor)
+index.html (el nombre de archivo específico solicitado)
+
+MENSAJES DE HTTP:
+
+GET : OBTENER INFORMACION
+POST: SUBIR INFORMACION
+PUT: SUBIR INFORMACION
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+CORREO ELECTRONICO:
+	
+PROTOCOLOS:										PUERTO
+SMTP: SIMPLE MAIL TRANSPORT PROTOCOL    : ENVIA CORREO					25
+POP : POST OFFICE PROTOCOL		: RECIBE CORREO Y ELIMINA DEL SERVER		110
+IMAP: INTENET MESSAGE ACCCESS PROTOCOL  : RECIBE CORREO Y GUARDA COPIA RESPALDO		143
+
+TERMINOLOGIA DE EMAIL:
+MUA: MAIL USER AGENT
+MTA: MAIL TRANSPORT AGENT
+MDA: MAIL DELIVERY AGENT
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+NOMBRES DE DOMINIO : DNS   :      53
+
+NSLOOKUP: RESUELVE NOMBRES DE DOMINIO EN IP.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+DHCP: DYNAMIC HOST CONFIGURATION PROTOCOL
+
+PAQUETES DE DHCP:
+DISCOVER    : BROADCAST
+OFFER       : UNICAST
+REQUEST     : BROADCAST
+ACKNOWLEDGE : UNICAST
+--------------------------
+REQUEST  (REN): UNICAST
+ACKNOWLEDGE : UNICAST
+ 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+						PUERTOS
+FTP: FILE TRANSPORT PROTOCOL			20,21	TCP		USUARIO / CONTRASEÑA
+TFTP: TRIVIAL FILE TRANSPORT PROTOCOLO		69	UDP
+
+SMB: SERVER MESSAGE BLOCK :
+COMPARTE ARCHIVOS EN REDES MICROSOFT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,118 @@
+MODELO OSI : OPEN SYSTEM INTERCONNECTION
+
+
+			PDU: PROTOCOL DATA UNIT 
+
+APLICACION		DATOS
+PRESENTACION		DATOS
+SESION			DATOS
+TRANSPORTE		SEGMENTO/DATAGRAMA	# PUERTO + DATOS
+RED			PAQUETE			IP + SEGMENTO
+ENLACE DE DATOS		TRAMA			MAC + PAQUETE
+FISICA			BITS 			10101101001010101
+-----------------------------------------------------------------------
+
+CAP 14: CAPA DE TRANSPORTE
+
+permite la segmentación de datos y proporciona el control 
+necesario para rearmar estos segmentos en los distintos streams de comunicación.
+
+PROTOCOLOS DE CAPA DE TRANSPORTE
+Protocolo de control de transmisión (TCP)  (MAS CONFIABLE / MAYOR SOBRECARGA)		SEGMENTO
+RFC 793
+Orientado a la conexión: crea una sesión entre el origen y destino.
+Entrega confiable: retransmite datos perdidos o dañados.
+Reconstrucción de datos ordenada: numeración y secuenciación de segmentos.
+Control del flujo: regula la cantidad de datos que se transmiten.
+Protocolo con estado: realiza un seguimiento de la sesión.
+
+
+Protocolo de datagramas de usuario (UDP)  (MENOS CONFIABLE / MENOR SOBRECARGA)		DATAGRAMA
+RFC768
+NO Orientado a la conexión: NO crea una sesión entre el origen y destino.
+NO ES Entrega confiable: NO retransmite datos perdidos o dañados.
+NO HAY Reconstrucción de datos ordenada: NO numeración NI secuenciación de segmentos.
+NO HAY Control del flujo: NO regula la cantidad de datos que se transmiten.
+Protocolo SIN estado: NO realiza un seguimiento de la sesión.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+LISTA DE PUERTOS DE TCP UDP:
+
+TCP:
+HTTP : 80 
+HTTPS: 443
+SMTP : 25
+POP  : 110
+IMAP : 143
+TELNET: 23
+SSH  :  22
+FTP  :  20,21
+
+UDP:
+DHCP : 67,68
+TFTP : 69
+SNMP: 161
+
+TCP/UDP:
+DNS  : 53
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+RANGOS DE PUERTO:
+
+0-1023: BIEN CONOCIDOS
+1024-49151 : REGISTRADOS 
+49151 - 65535 : DINAMICOS EFIMEROS O PRIVADOS
+
+SOCKET:  LA UNION DE LA IP (CAPA 3) CON EL PUERTO (CAPA 4)
+EJEMPLO:
+	192.168.0.10:443
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+FUNCIONAMIENTO DEL TCP:
+
+1. ESTABLECIMIENTO DE SESION:
+
+ORIGEN		DESTINO
+SYN	-->
+	<--	SYN ACK
+ACK	-->
+
+2. ENVIO DE DATOS:
+
+ORIGEN			DESTINO
+SEQ	ACK	10KB	SEQ	ACK
+
+  0	0       -->
+		<--	0	11
+
+  1	11	-->	
+		<--	1 	22
+
+  2     22	-->
+
+  2	22	-->	
+		<--	2 	33
+
+
+3. FINALIZA LA SESION:
+
+   ORIGEN		DESTINO
+   FIN		-->
+		<-- 	FIN ACK
+		<--	FIN
+   ACK		-->
+
+	SESION FINALIZADA
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+
+
+
+
+
+
