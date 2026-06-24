@@ -167,23 +167,3 @@ Cada nota avanzada sigue este formato:
 7. **Referencias** - RFCs y estándares
 
 ---
-
-## Notas Importantes
-
-- ✓ Estas notas son RESÚMENES
-- ✓ Cisco IOS cambia entre versiones, verifica comandos exactos
-- ✓ Practica con laboratorio real o Packet Tracer
-- ⚠ No memorices, entiende los conceptos
-- ⚠ La seguridad es crítica en redes reales
-
----
-
-## Créditos y Referencias
-
-Las notas están basadas en:
-- Oficial Cisco CCNA Study Materials
-- Cisco Learning Network
-- RFC (Request for Comments) estándares
-- Experiencia práctica en redes
-
-**Última actualización:** 2026-06
