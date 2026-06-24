@@ -168,7 +168,7 @@ Una vez completado esto, puedes agregar más dispositivos, configurar VLANs o im
 
 # Redes CCNA con CISCO Resumenes de Modulo 1
 
-## Creditos a profesor de Cisco Ken Contreras en UCR.
+## Creditos a instructor de CISCO Ken Contreras en UCR.
 
 ## Notas de Estudio CCNA 
 

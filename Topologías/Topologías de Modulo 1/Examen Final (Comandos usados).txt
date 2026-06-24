@@ -1,0 +1,127 @@
+LAN 1: 8024
+
+LAN 2: 255
+
+LAN 3: 2047
+
+8024/19
+2047/20
+255/23
+
+200.10.0.0/19 	255.255.224.0 	 | 0.0.31.255 	R: 200.10.0.0		P: 200.10.0.1
+						B: 200.10.31.255	U: 200.10.31.254
+
+200.10.32.0/20	255.255.240.0	 | 0.0.15.255	R: 200.10.32.0		P: 200.10.32.1
+						B: 200.10.47.255	U: 200.10.47.254
+
+200.10.48.0/23  255.255.254.0	 | 0.0.1.255	R: 200.10.48.0		P: 200.10.48.1
+						B: 200.10.49.255	U: 200.10.49.254
+
+200.10.50.0/30  255.255.255.252	 | 0.0.0.3	R: 200.10.50.0		P: 200.10.50.1
+						B: 200.10.50.3		U: 200.10.50.2
+
+200.10.50.4/30  255.255.255.252  | 0.0.0.3	R: 200.10.50.4		P: 200.10.50.5
+						B: 200.10.50.7		U: 200.10.50.6
+
+200.10.50.8/30	255.255.255.252  | 0.0.0.3	R: 200.10.50.8		P: 200.10.50.9
+						B: 200.10.50.11		U: 200.10.50.10
+
+R1: 
+interface Fa0/0
+ip address 200.10.0.1 255.255.224.0
+description Conexion a red lan y Gateway
+no shutdown
+exit
+interface Se0/0/0
+ip address 200.10.50.1 255.255.255.252
+description Conexion de enrutamiento hacia R2
+no shutdown
+exit
+interface Se0/0/1
+ip address 200.10.50.9 255.255.255.252
+description Conexion de enrutamiento hacia R3
+no shutdown
+exit
+ip route 200.10.32.0 255.255.240.0 200.10.50.10
+ip route 200.10.48.0 255.255.254.0 200.10.50.2
+
+R3:
+interface Fa0/0
+ip address 200.10.32.1 255.255.240.0
+description Conexion a red lan y Gateway
+no shutdown
+exit
+interface Se0/0/0
+ip address 200.10.50.10 255.255.255.252
+description Conexion de enrutamiento hacia R1
+no shutdown
+exit
+ip route 200.10.0.0 255.255.224.0 200.10.50.9
+interface Se0/0/1
+ip address 200.10.50.6 255.255.255.252
+description Conexion de enrutamiento hacia R2
+no shutdown
+exit
+ip route 200.10.48.0 255.255.254.0 200.10.50.5
+
+R2:
+interface Fa0/0
+ip address 200.10.48.1 255.255.254.0
+description Conexion a red lan y Gateway
+no shutdown
+exit
+interface Se0/0/0
+ip address 200.10.50.2 255.255.255.252
+description Conexion de enrutamiento hacia R1
+no shutdown
+exit
+ip route 200.10.0.0 255.255.224.0 200.10.50.1
+interface Se0/0/1
+ip address 200.10.50.5 255.255.255.252
+description Conexion de enrutamiento hacia R3
+no shutdown
+exit
+ip route 200.10.32.0 255.255.240.0 200.10.50.6
+
+pooles dhcp
+
+R1:
+
+ip dhcp excluded-address 200.10.0.50
+ip dhcp pool Lan_1
+network 200.10.0.0 255.255.224.0
+default-router 200.10.0.1
+dns-server 200.10.0.50
+
+R3:
+
+ip dhcp excluded-address 200.10.32.25
+ip dhcp pool Lan_3
+network 200.10.32.0 255.255.240.0
+default-router 200.10.32.1
+dns-server 200.10.0.50
+
+R2:
+
+ip dhcp pool Lan_2
+network 200.10.48.0 255.255.254.0
+default-router 200.10.48.1
+dns-server 200.10.0.50
+
+
+enable
+config term
+enable secret cisco
+username CCNA secret CLASS
+line console 0
+login local
+exit
+line vty 0 4
+login local
+transport input telnet
+exit
+banner motd # AVISO: Acceso restringido a personal NO autorizado. | Se prohíbe el ingreso #
+exit
+copy run star
+
+
