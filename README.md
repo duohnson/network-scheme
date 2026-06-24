@@ -97,3 +97,7 @@ En la carpeta de Resumenes encontrarás mis notas completas del curso CCNA, tant
 → **[Acceder a Resumenes/README.md](./Resumenes/README.md)** para guía completa y estructura detallada
 
 ========================================================================================================================================================
+
+## Filtros utiles en Wireshark:
+
+![Wireshark](/Imagenes/tshark.jpg)
