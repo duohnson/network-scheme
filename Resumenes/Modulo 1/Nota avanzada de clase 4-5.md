@@ -264,7 +264,7 @@ En una red con **múltiples dispositivos compartiendo el mismo medio**:
 Problema:
 PC A y PC B intentan transmitir al mismo tiempo
                 ↓
-         COLISIÓN ❌
+         COLISIÓN 
                 ↓
          Datos se dañan
                 ↓

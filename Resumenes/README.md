@@ -120,6 +120,63 @@ Resumenes/
 
 ---
 
+## Módulo 2: Switching, Routing, and Wireless Essentials
+
+### Clases 1 y 2: VLANs y Enrutamiento Inter-VLAN
+**Notas Originales:**
+- [Clase 1 - Basic Switching](/Resumenes/Modulo%202/Notas%20de%20clase%201%20CAP%201%20BASIC%20SWITCHING.txt)
+- [Clase 2 - VLAN and Trunks](/Resumenes/Modulo%202/Notas%20de%20clase%202%20CAP%203%20VLAN%20AND%20TRUNKS.txt)
+
+**Nota Avanzada:**
+- [**Nota Avanzada - Clases 1 y 2**](/Resumenes/Modulo%202/Nota%20avanzada%20de%20clase%201-2.md)
+  - Conceptos básicos de switching
+  - Beneficios y tipos de VLANs
+  - Puertos de acceso y troncales (802.1Q)
+  - Enrutamiento Inter-VLAN (Router-on-a-Stick y SVI)
+  - Resolución de problemas básica
+
+### Clase 3: Enrutamiento Inter-VLAN
+**Nota Original:**
+- [Clase 3 - Inter VLAN Routing](/Resumenes/Modulo%202/Notas%20de%20clase%203%20CAP%204%20%20INTER%20VLAN%20ROUTING.txt)
+
+**Nota Avanzada:**
+- [**Nota Avanzada - Clase 3**](/Resumenes/Modulo%202/Nota%20avanzada%20de%20clase%203.md)
+  - Métodos de enrutamiento (Legacy, Router-on-a-Stick, SVI)
+  - Configuración detallada y Troubleshooting
+
+### Clase 4: Spanning Tree Protocol (STP)
+**Nota Original:**
+- [Clase 4 - STP](/Resumenes/Modulo%202/Notas%20de%20clase%204%20%20STP%20%20%20SPANNING%20TREE%20PROTOCOL.txt)
+
+**Nota Avanzada:**
+- [**Nota Avanzada - Clase 4**](/Resumenes/Modulo%202/Nota%20avanzada%20de%20clase%204.md)
+  - Problemas de bucles de Capa 2
+  - Funcionamiento, Puente Raíz y roles de puertos
+  - Variantes (PVST+, RSTP)
+  - PortFast y BPDU Guard
+
+### Clase 5: EtherChannel
+**Nota Original:**
+- [Clase 5 - EtherChannel](/Resumenes/Modulo%202/Notas%20de%20clase%205%20CAP%206%20ETHERCHANNEL.txt)
+
+**Nota Avanzada:**
+- [**Nota Avanzada - Clase 5**](/Resumenes/Modulo%202/Nota%20avanzada%20de%20clase%205.md)
+  - Ventajas de agregación de enlaces
+  - Protocolos de negociación (PAgP, LACP)
+  - Configuración y requisitos
+
+### Clase 6: DHCP, SLAAC y DHCPv6
+**Nota Original:**
+- [Clase 6 - DHCP y SLAAC](/Resumenes/Modulo%202/Notas%20de%20clase%206%20DHCP%20Y%20SLAAC%20Y%20DHCPV6.txt)
+
+**Nota Avanzada:**
+- [**Nota Avanzada - Clase 6**](/Resumenes/Modulo%202/Nota%20avanzada%20de%20clase%206.md)
+  - DHCPv4 y Agente de Retransmisión (Relay)
+  - Asignación dinámica IPv6 (SLAAC, EUI-64)
+  - DHCPv6 Sin Estado y Con Estado
+
+---
+
 ## Cómo Usar Estas Notas
 
 ### Para Principiantes

@@ -93,6 +93,27 @@ En la carpeta de Resumenes encontrarás mis notas completas del curso CCNA, tant
 | [Clase 11](./Resumenes/Modulo%201/Notas%20de%20clase%2011.txt) | Interfaz, Telnet, SSH |
 | **[→ Nota Avanzada](./Resumenes/Modulo%201/Nota%20avanzada%20de%20clase%2011.md)** | **Modos IOS, IPv4/IPv6, seguridad (console/enable/VTY), usuarios, Telnet vs SSH, backup, comandos útiles** |
 
+### Módulo 2 - Switching, Routing, and Wireless Essentials
+
+#### Clases 1 y 2: VLANs y Enrutamiento
+| Recurso | Descripción |
+|---------|-------------|
+| [Clase 1](./Resumenes/Modulo%202/Notas%20de%20clase%201%20CAP%201%20BASIC%20SWITCHING.txt) | Basic Switching, configuración inicial |
+| [Clase 2](./Resumenes/Modulo%202/Notas%20de%20clase%202%20CAP%203%20VLAN%20AND%20TRUNKS.txt) | Creación de VLANs, Puertos Access y Trunks |
+| **[→ Nota Avanzada](./Resumenes/Modulo%202/Nota%20avanzada%20de%20clase%201-2.md)** | **Conceptos de switching, VLANs, Troncales (802.1Q), Enrutamiento Inter-VLAN (Router-on-a-Stick, SVI)** |
+
+#### Clases 3-6: Enrutamiento, STP, EtherChannel y DHCP
+| Recurso | Descripción |
+|---------|-------------|
+| [Clase 3](./Resumenes/Modulo%202/Notas%20de%20clase%203%20CAP%204%20%20INTER%20VLAN%20ROUTING.txt) | Inter-VLAN Routing, SVI |
+| [Clase 4](./Resumenes/Modulo%202/Notas%20de%20clase%204%20%20STP%20%20%20SPANNING%20TREE%20PROTOCOL.txt) | Spanning Tree Protocol (STP) |
+| [Clase 5](./Resumenes/Modulo%202/Notas%20de%20clase%205%20CAP%206%20ETHERCHANNEL.txt) | EtherChannel, LACP y PAgP |
+| [Clase 6](./Resumenes/Modulo%202/Notas%20de%20clase%206%20DHCP%20Y%20SLAAC%20Y%20DHCPV6.txt) | DHCPv4, SLAAC, DHCPv6 |
+| **[→ Nota Avanzada 3](./Resumenes/Modulo%202/Nota%20avanzada%20de%20clase%203.md)** | **Enrutamiento Inter-VLAN, subinterfaces, SVI detallado** |
+| **[→ Nota Avanzada 4](./Resumenes/Modulo%202/Nota%20avanzada%20de%20clase%204.md)** | **STP, RSTP, PVST+, BPDU Guard, PortFast** |
+| **[→ Nota Avanzada 5](./Resumenes/Modulo%202/Nota%20avanzada%20de%20clase%205.md)** | **Agregación de enlaces, modos y requisitos** |
+| **[→ Nota Avanzada 6](./Resumenes/Modulo%202/Nota%20avanzada%20de%20clase%206.md)** | **DHCP Relay, asignación dinámica IPv6, EUI-64** |
+
 #### Ver todas las notas completas
 → **[Acceder a Resumenes/README.md](./Resumenes/README.md)** para guía completa y estructura detallada
 

@@ -81,12 +81,12 @@ Los capítulos 6-7 exploran la capa física y los medios por los cuales viajan n
 Ambos extremos = 1,2,3,4,5,6,7,8
 ┌─────────┬─────────┐
 │ A ⬚    │ A ⬚    │
-│ B ⬛    │ B ⬛    │
-│ C ⬜    │ C ⬜    │
-│ D ◼     │ D ◼     │
+│ B     │ B     │
+│ C     │ C     │
+│ D      │ D      │
 └─────────┴─────────┘
 
-Uso: PC ↔ Switch, Server ↔ Switch
+Uso: PC  Switch, Server  Switch
 ```
 
 **Cross-Over**
@@ -94,12 +94,12 @@ Uso: PC ↔ Switch, Server ↔ Switch
 Un extremo = A, otro extremo = B
 ┌─────────┬─────────┐
 │ A ⬚    │ B ⬚    │
-│ B ⬛    │ A ⬛    │
-│ C ⬜    │ C ⬜    │
-│ D ◼     │ D ◼     │
+│ B     │ A     │
+│ C     │ C     │
+│ D      │ D      │
 └─────────┴─────────┘
 
-Uso: PC ↔ PC, Switch ↔ Switch, Router ↔ Router
+Uso: PC  PC, Switch  Switch, Router  Router
 ```
 
 **MDIX (Auto-MDI/MDIX)**
@@ -461,9 +461,9 @@ Tarjeta de Red (Network Interface Card)
 └──────────────────────────┘
 
 LEDs comunes:
-🟢 Link LED    = Conexión activa
-🟠 Activity LED = Datos enviándose
-🔴 Speed LED   = Velocidad de conexión
+ Link LED    = Conexión activa
+ Activity LED = Datos enviándose
+ Speed LED   = Velocidad de conexión
 ```
 
 ---

@@ -756,7 +756,7 @@ Problema:
 ```
 Acceso a email (sincronización):
 
-Función: Servidor ↔ Cliente (sincronización)
+Función: Servidor  Cliente (sincronización)
 
 Características:
 ├─ Sincroniza entre dispositivos
@@ -793,7 +793,7 @@ Sin SSH (Telnet - INSEGURO):
 │ login: admin                │
 │ password: cisco123          │ ← En claro!
 │ # ls                        │
-│ Total inseguro ❌           │
+│ Total inseguro            │
 └─────────────────────────────┘
 
 Con SSH (SEGURO):
