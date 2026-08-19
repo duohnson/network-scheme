@@ -6,20 +6,24 @@ Este repositorio contiene mis notas completas del curso CCNA (Cisco Certified Ne
 
 ```
 Resumenes/
-└── Modulo 1/
-    ├── General.md                           (Conceptos generales)
-    ├── Subneteo_Conceptos.md               (Subneting avanzado)
-    ├── Notas de clase 1-11.txt             (Notas originales por clase)
-    └── Nota avanzada de clase [X-Y].md    (Versiones expandidas)
+├── Modulo 1/
+│   ├── General.md                           (Conceptos generales)
+│   ├── Subneteo_Conceptos.md               (Subneting avanzado)
+│   ├── Notas de clase 1-11.txt             (Notas originales por clase)
+│   └── Nota avanzada de clase [X-Y].md    (Versiones expandidas)
+└── Modulo 2/
+    ├── Notas de clase 1-12.txt              (Notas originales por clase)
+    └── Nota avanzada de clase [X].md       (Versiones expandidas)
 ```
 
 ---
 
 ## Módulo 1: Fundamentos de Redes
 
-### Conceptos Introductorios
+### Conceptos Introductorios y Evaluación
 - **[Definición de Redes](/Resumenes/Modulo%201/General.md)** - Dispositivos, IPs, QoS, tipos de red, convergencia
 - **[Conceptos de Subneteo](/Resumenes/Modulo%201/Subneteo_Conceptos.md)** - VLSM, CIDR, cálculo de subredes
+- **[Práctica de Examen Módulo 1](/Resumenes/Modulo%201/Practica_Examen_Modulo1.md)** - Ejercicios prácticos y preguntas de repaso
 
 ### Capítulos 1-3: Protocolos y Modelos de Red
 **Notas Originales:**
@@ -28,12 +32,17 @@ Resumenes/
 - [Clase 3 - Modelo OSI y Encapsulación](/Resumenes/Modulo%201/Notas%20de%20clase%203.txt)
 
 **Nota Avanzada:**
-- [**Nota Avanzada - Capítulos 1-3**](/Resumenes/Modulo%201/Nota%20avanzada%20de%20clase%201.md)
+- [**Nota Avanzada - Clase 1**](/Resumenes/Modulo%201/Nota%20avanzada%20de%20clase%201.md)
   - Elementos de comunicación profundizados
   - Requisitos de protocolos explicados
   - Tipos de entrega (unicast, multicast, broadcast)
   - Protocolo OSI vs TCP/IP
   - Convergencia de redes
+- [**Nota Avanzada - Clases 2-3**](/Resumenes/Modulo%201/Nota%20avanzada%20de%20clase%202-3.md)
+  - Capas del Modelo OSI y TCP/IP
+  - Uso de puertos y PDUs
+  - Subcapa MAC y FCS
+  - Métodos de acceso al medio (CSMA/CD y CSMA/CA)
 
 ### Capítulos 4-5: Capa de Enlace de Datos
 **Notas Originales:**
@@ -88,6 +97,9 @@ Resumenes/
 - [Clase 10 - Capa de Aplicación](/Resumenes/Modulo%201/Notas%20de%20clase%2010.txt)
 
 **Nota Avanzada:**
+- [**Nota Avanzada - Clase 10**](/Resumenes/Modulo%201/Nota%20avanzada%20de%20clase%2010.md)
+  - Protocolos de Capa de Aplicación (HTTP, DNS, DHCP)
+  - Correo electrónico (SMTP, POP, IMAP)
 - [**Nota Avanzada - Capítulos 14-15**](/Resumenes/Modulo%201/Nota%20avanzada%20de%20clase%2014-15.md)
   - TCP vs UDP comparación completa
   - Three-Way Handshake
@@ -174,6 +186,77 @@ Resumenes/
   - DHCPv4 y Agente de Retransmisión (Relay)
   - Asignación dinámica IPv6 (SLAAC, EUI-64)
   - DHCPv6 Sin Estado y Con Estado
+
+### Clase 7: FHRP (First Hop Redundancy Protocols)
+**Nota Original:**
+- [Clase 7 - FHRP](/Resumenes/Modulo%202/Notas%20de%20clase%207%20CAP%209%20FHRP.txt)
+
+**Nota Avanzada:**
+- [**Nota Avanzada - Clase 7**](/Resumenes/Modulo%202/Nota%20avanzada%20de%20clase%207.md)
+  - Problema del gateway único
+  - HSRP (Hot Standby Router Protocol)
+  - VRRP (Virtual Router Redundancy Protocol)
+  - GLBP (Gateway Load Balancing Protocol)
+  - Comparación de protocolos FHRP
+
+### Clase 8: Conceptos de Seguridad en LAN
+**Nota Original:**
+- [Clase 8 - LAN Security](/Resumenes/Modulo%202/Notas%20de%20clase%208%20CAP%2010%20LAN%20SECURITY.txt)
+
+**Nota Avanzada:**
+- [**Nota Avanzada - Clase 8**](/Resumenes/Modulo%202/Nota%20avanzada%20de%20clase%208.md)
+  - Ataques de Capa 2: MAC Flooding, VLAN Hopping, DHCP/ARP Spoofing
+  - Mejores prácticas de seguridad en la LAN
+  - Defensa en profundidad
+
+### Clase 9: Configuración de Seguridad en Switches
+**Nota Original:**
+- [Clase 9 - Switch Security](/Resumenes/Modulo%202/Notas%20de%20clase%209%20CAP%2011%20SWITCH%20SECURITY.txt)
+
+**Nota Avanzada:**
+- [**Nota Avanzada - Clase 9**](/Resumenes/Modulo%202/Nota%20avanzada%20de%20clase%209.md)
+  - Port Security (Sticky, violaciones, err-disabled)
+  - DHCP Snooping (trusted/untrusted)
+  - Dynamic ARP Inspection (DAI)
+  - IP Source Guard
+
+### Clase 10: WLAN (Wireless LAN)
+**Nota Original:**
+- [Clase 10 - WLAN](/Resumenes/Modulo%202/Notas%20de%20clase%2010%20CAP%2012-13%20WLAN.txt)
+
+**Nota Avanzada:**
+- [**Nota Avanzada - Clase 10**](/Resumenes/Modulo%202/Nota%20avanzada%20de%20clase%2010.md)
+  - Estándares 802.11 (WiFi 4/5/6)
+  - Bandas 2.4 GHz vs 5 GHz
+  - Seguridad: WEP → WPA → WPA2 → WPA3
+  - Modos de AP: Autónomo vs Lightweight (CAPWAP)
+  - Amenazas WLAN (Rogue AP, Evil Twin)
+
+### Clase 11: Conceptos de Enrutamiento
+**Nota Original:**
+- [Clase 11 - Enrutamiento](/Resumenes/Modulo%202/Notas%20de%20clase%2011%20CAP%2014%20ENRUTAMIENTO.txt)
+
+**Nota Avanzada:**
+- [**Nota Avanzada - Clase 11**](/Resumenes/Modulo%202/Nota%20avanzada%20de%20clase%2011.md)
+  - Rutas estáticas vs Protocolos de enrutamiento dinámico
+  - Tabla de enrutamiento: 7 elementos clave
+  - Distancias Administrativas y Métricas
+  - Clasificación: IGP (Vector Distancia, Estado de Enlace) y EGP (BGP)
+  - Configuración de RIP, EIGRP y OSPF
+  - Clases de direccionamiento IP
+  - Niveles de rutas en la tabla de enrutamiento
+
+### Clase 12: Rutas Estáticas (IPv4 e IPv6)
+**Nota Original:**
+- [Clase 12 - Rutas Estáticas](/Resumenes/Modulo%202/Notas%20de%20clase%2012%20CAP%2015%20RUTAS%20ESTATICAS.txt)
+
+**Nota Avanzada:**
+- [**Nota Avanzada - Clase 12**](/Resumenes/Modulo%202/Nota%20avanzada%20de%20clase%2012.md)
+  - Tipos de rutas estáticas (estándar, predeterminada, flotante, hacia host)
+  - Sintaxis IPv4 e IPv6 con ejemplos
+  - Sumarización de rutas IPv4 e IPv6
+  - Ruta completamente especificada
+  - Verificación de rutas estáticas
 
 ---
 
